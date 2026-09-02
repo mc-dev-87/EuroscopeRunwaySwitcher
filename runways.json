@@ -1,0 +1,39 @@
+{
+  "columns": [
+    {
+      "airports": [
+        { "code": "EPWA", "west": { "dep": "29", "arr": "33" }, "east": { "dep": "15", "arr": "11" } },
+        { "code": "EPMO", "west": { "dep": "26", "arr": "26" }, "east": { "dep": "08", "arr": "08" } },
+        { "code": "EPLL", "west": { "dep": "25", "arr": "25" }, "east": { "dep": "07", "arr": "07" } },
+        { "code": "EPRA", "west": { "dep": "25", "arr": "25" }, "east": { "dep": "07", "arr": "07" } }
+      ]
+    },
+    {
+      "airports": [
+        { "code": "EPKK", "west": { "dep": "25", "arr": "25" }, "east": { "dep": "07", "arr": "07" } },
+        { "code": "EPKT", "west": { "dep": "26", "arr": "26" }, "east": { "dep": "08", "arr": "08" } },
+        { "code": "EPRZ", "west": { "dep": "27", "arr": "27" }, "east": { "dep": "09", "arr": "09" } }
+      ]
+    },
+    {
+      "airports": [
+        { "code": "EPPO", "west": { "dep": "28", "arr": "28" }, "east": { "dep": "10", "arr": "10" } },
+        { "code": "EPWR", "west": { "dep": "29", "arr": "29" }, "east": { "dep": "11", "arr": "11" } },
+        { "code": "EPZG", "west": { "dep": "24", "arr": "24" }, "east": { "dep": "06", "arr": "06" } }
+      ]
+    },
+    {
+      "airports": [
+        { "code": "EPGD", "west": { "dep": "29", "arr": "29" }, "east": { "dep": "11", "arr": "11" } },
+        { "code": "EPBY", "west": { "dep": "26", "arr": "26" }, "east": { "dep": "08", "arr": "08" } }
+      ]
+    },
+    {
+      "airports": [
+        { "code": "EPSC", "west": { "dep": "31", "arr": "31" }, "east": { "dep": "13", "arr": "13" } },
+        { "code": "EPSY", "west": { "dep": "01", "arr": "01" }, "east": { "dep": "19", "arr": "19" } },
+        { "code": "EPLB", "west": { "dep": "25", "arr": "25" }, "east": { "dep": "07", "arr": "07" } }
+      ]
+    }
+  ]
+}
