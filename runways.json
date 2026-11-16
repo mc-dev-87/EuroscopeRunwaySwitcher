@@ -1,38 +1,197 @@
 {
+  "autoWx": {
+    "noFactorWind": 5,
+    "prefWind": 15,
+    "assumedWindDir": 270
+  },
   "columns": [
     {
       "airports": [
-        { "code": "EPWA", "west": { "dep": "29", "arr": "33" }, "east": { "dep": "15", "arr": "11" } },
-        { "code": "EPMO", "west": { "dep": "26", "arr": "26" }, "east": { "dep": "08", "arr": "08" } },
-        { "code": "EPLL", "west": { "dep": "25", "arr": "25" }, "east": { "dep": "07", "arr": "07" } },
-        { "code": "EPRA", "west": { "dep": "25", "arr": "25" }, "east": { "dep": "07", "arr": "07" } }
+        {
+          "code": "EPWA",
+          "west": { "dep": "29", "arr": "33" },
+          "east": { "dep": "15", "arr": "11" },
+          "auto": {
+            "runways": [
+              { "id": "11", "trueHeading": 115 },
+              { "id": "29", "trueHeading": 295 },
+              { "id": "15", "trueHeading": 152 },
+              { "id": "33", "trueHeading": 332 }
+            ],
+            "preferredDep": ["29", "15", "33", "11"],
+            "preferredArr": ["33", "11", "29", "15"]
+          }
+        },
+        {
+          "code": "EPMO",
+          "west": { "dep": "26", "arr": "26" },
+          "east": { "dep": "08", "arr": "08" },
+          "auto": {
+            "runways": [
+              { "id": "08", "trueHeading": 81 },
+              { "id": "26", "trueHeading": 261 }
+            ]
+          }
+        },
+        {
+          "code": "EPLL",
+          "west": { "dep": "25", "arr": "25" },
+          "east": { "dep": "07", "arr": "07" },
+          "auto": {
+            "runways": [
+              { "id": "07", "trueHeading": 71 },
+              { "id": "25", "trueHeading": 251 }
+            ]
+          }
+        },
+        {
+          "code": "EPRA",
+          "west": { "dep": "25", "arr": "25" },
+          "east": { "dep": "07", "arr": "07" },
+          "auto": {
+            "runways": [
+              { "id": "07", "trueHeading": 75 },
+              { "id": "25", "trueHeading": 255 }
+            ]
+          }
+        }
       ]
     },
     {
       "airports": [
-        { "code": "EPKK", "west": { "dep": "25", "arr": "25" }, "east": { "dep": "07", "arr": "07" } },
-        { "code": "EPKT", "west": { "dep": "26", "arr": "26" }, "east": { "dep": "08", "arr": "08" } },
-        { "code": "EPRZ", "west": { "dep": "27", "arr": "27" }, "east": { "dep": "09", "arr": "09" } }
+        {
+          "code": "EPKK",
+          "west": { "dep": "25", "arr": "25" },
+          "east": { "dep": "07", "arr": "07" },
+          "auto": {
+            "runways": [
+              { "id": "07", "trueHeading": 78 },
+              { "id": "25", "trueHeading": 258 }
+            ]
+          }
+        },
+        {
+          "code": "EPKT",
+          "west": { "dep": "26", "arr": "26" },
+          "east": { "dep": "08", "arr": "08" },
+          "auto": {
+            "runways": [
+              { "id": "08", "trueHeading": 90 },
+              { "id": "26", "trueHeading": 270 }
+            ]
+          }
+        },
+        {
+          "code": "EPRZ",
+          "west": { "dep": "27", "arr": "27" },
+          "east": { "dep": "09", "arr": "09" },
+          "auto": {
+            "runways": [
+              { "id": "09", "trueHeading": 91 },
+              { "id": "27", "trueHeading": 271 }
+            ]
+          }
+        }
       ]
     },
     {
       "airports": [
-        { "code": "EPPO", "west": { "dep": "28", "arr": "28" }, "east": { "dep": "10", "arr": "10" } },
-        { "code": "EPWR", "west": { "dep": "29", "arr": "29" }, "east": { "dep": "11", "arr": "11" } },
-        { "code": "EPZG", "west": { "dep": "24", "arr": "24" }, "east": { "dep": "06", "arr": "06" } }
+        {
+          "code": "EPPO",
+          "west": { "dep": "28", "arr": "28" },
+          "east": { "dep": "10", "arr": "10" },
+          "auto": {
+            "runways": [
+              { "id": "10", "trueHeading": 108 },
+              { "id": "28", "trueHeading": 288 }
+            ]
+          }
+        },
+        {
+          "code": "EPWR",
+          "west": { "dep": "29", "arr": "29" },
+          "east": { "dep": "11", "arr": "11" },
+          "auto": {
+            "runways": [
+              { "id": "11", "trueHeading": 116 },
+              { "id": "29", "trueHeading": 296 }
+            ]
+          }
+        },
+        {
+          "code": "EPZG",
+          "west": { "dep": "24", "arr": "24" },
+          "east": { "dep": "06", "arr": "06" },
+          "auto": {
+            "runways": [
+              { "id": "06", "trueHeading": 65 },
+              { "id": "24", "trueHeading": 245 }
+            ]
+          }
+        }
       ]
     },
     {
       "airports": [
-        { "code": "EPGD", "west": { "dep": "29", "arr": "29" }, "east": { "dep": "11", "arr": "11" } },
-        { "code": "EPBY", "west": { "dep": "26", "arr": "26" }, "east": { "dep": "08", "arr": "08" } }
+        {
+          "code": "EPGD",
+          "west": { "dep": "29", "arr": "29" },
+          "east": { "dep": "11", "arr": "11" },
+          "auto": {
+            "runways": [
+              { "id": "11", "trueHeading": 113 },
+              { "id": "29", "trueHeading": 293 }
+            ]
+          }
+        },
+        {
+          "code": "EPBY",
+          "west": { "dep": "26", "arr": "26" },
+          "east": { "dep": "08", "arr": "08" },
+          "auto": {
+            "runways": [
+              { "id": "08", "trueHeading": 82 },
+              { "id": "26", "trueHeading": 262 }
+            ]
+          }
+        }
       ]
     },
     {
       "airports": [
-        { "code": "EPSC", "west": { "dep": "31", "arr": "31" }, "east": { "dep": "13", "arr": "13" } },
-        { "code": "EPSY", "west": { "dep": "01", "arr": "01" }, "east": { "dep": "19", "arr": "19" } },
-        { "code": "EPLB", "west": { "dep": "25", "arr": "25" }, "east": { "dep": "07", "arr": "07" } }
+        {
+          "code": "EPSC",
+          "west": { "dep": "31", "arr": "31" },
+          "east": { "dep": "13", "arr": "13" },
+          "auto": {
+            "runways": [
+              { "id": "13", "trueHeading": 131 },
+              { "id": "31", "trueHeading": 311 }
+            ]
+          }
+        },
+        {
+          "code": "EPSY",
+          "west": { "dep": "01", "arr": "01" },
+          "east": { "dep": "19", "arr": "19" },
+          "auto": {
+            "runways": [
+              { "id": "01", "trueHeading": 19 },
+              { "id": "19", "trueHeading": 199 }
+            ]
+          }
+        },
+        {
+          "code": "EPLB",
+          "west": { "dep": "25", "arr": "25" },
+          "east": { "dep": "07", "arr": "07" },
+          "auto": {
+            "runways": [
+              { "id": "07", "trueHeading": 77 },
+              { "id": "25", "trueHeading": 257 }
+            ]
+          }
+        }
       ]
     }
   ]

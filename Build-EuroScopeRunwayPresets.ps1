@@ -2,6 +2,7 @@
 $ErrorActionPreference = "Stop"
 
 $src = Join-Path $PSScriptRoot "EuroScopeRunwayPresets.cs"
+$nativeListViewSrc = Join-Path $PSScriptRoot "NativeListViewGeometry.cs"
 $config = Join-Path $PSScriptRoot "runways.json"
 $manifest = Join-Path $PSScriptRoot "EuroScopeRunwayPresets.exe.manifest"
 $outDir = Join-Path $PSScriptRoot "build"
@@ -12,6 +13,9 @@ if (!(Test-Path $config)) {
 }
 if (!(Test-Path $manifest)) {
     throw "Could not find application manifest: $manifest"
+}
+if (!(Test-Path $nativeListViewSrc)) {
+    throw "Could not find native ListView helper: $nativeListViewSrc"
 }
 
 New-Item -ItemType Directory -Force -Path $outDir | Out-Null
@@ -47,7 +51,7 @@ if (!(Test-Path $csc)) {
     throw "Could not find .NET Framework C# compiler."
 }
 
-& $csc /nologo /target:winexe /platform:anycpu `
+& $csc /nologo /target:winexe /platform:x86 `
     /win32manifest:"$manifest" `
     /reference:"$uiaClient" `
     /reference:"$uiaTypes" `
@@ -55,7 +59,7 @@ if (!(Test-Path $csc)) {
     /reference:System.Runtime.Serialization.dll `
     /reference:System.Windows.Forms.dll `
     /reference:System.Drawing.dll `
-    /out:"$out" "$src"
+    /out:"$out" "$src" "$nativeListViewSrc"
 
 if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
 

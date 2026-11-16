@@ -1,0 +1,4 @@
+# Local diagnostics and generated Windows artifacts
+.DS_Store
+.debug/
+build/
